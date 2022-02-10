@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="C971_Mobile_App.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="WGU" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text="View your terms!" FontSize="Title" Padding="30,10,30,10" HorizontalOptions="Center"/>
+        <ListView x:Name="listView_Terms" ItemTapped="listView_Terms_ItemTapped">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                            <Label Text="{Binding Title}" VerticalOptions="Center" TextColor="Black"/>
+                            <Label Text="{Binding StartDate, StringFormat='{}{0:MM/dd/yyyy}'}" VerticalOptions="Center"/>
+                            <Label Text="-" VerticalOptions="Center" HorizontalOptions="Center"/>
+                            <Label Text="{Binding EndDate, StringFormat='{}{0:MM/dd/yyyy}'}" VerticalOptions="Center"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button Text="ADD TERM" Margin="10,20" x:Name="btn_addTerm" Clicked="btn_addTerm_Clicked"/>
+        <Button Text="DELETE ALL DATA" Margin="10,20" x:Name="btn_del_all_data" Clicked="btn_del_all_data_Clicked"/>
+    </StackLayout>
+
+</ContentPage>

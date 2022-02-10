@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="C971_Mobile_App.CourseDetailPage">
+    <ContentPage.Content>
+        <StackLayout Padding="5, 5">
+            <Label Text="Course Name" HorizontalOptions="Center" x:Name="lbl_CourseName"/>
+            <Label Text="Status" Padding="5, 5" x:Name="lbl_Status"/>
+            <Label Text="Start Date" Padding="5, 5" x:Name="lbl_Start"/>
+            <Label Text="End Date" Padding="5, 5" x:Name="lbl_End"/>
+            <Label Text="Instructor Name" Padding="5, 5" x:Name="lbl_Instructor"/>
+            <Label Text="Instructor Phone" Padding="5, 5" x:Name="lbl_Phone"/>
+            <Label Text="Instructor Email" Padding="5, 5" x:Name="lbl_Email"/>
+            <Label Text="Notifications" Padding="5, 5" x:Name="lbl_Notifications"/>
+            <Label Text="Notes" Padding="5, 5" x:Name="lbl_Notes"/>
+
+            <Button Text="Share Notes" x:Name="btn_share_notes" Clicked="btn_share_notes_Clicked"/>
+            <Button Text="Assessments" x:Name="btn_assessments" Clicked="btn_assessments_Clicked"/>
+            <Button Text="Edit Course" x:Name="btn_edit_course" Clicked="btn_edit_course_Clicked"/>
+            <Button Text="Delete Course" x:Name="btn_del_course" Clicked="btn_del_course_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

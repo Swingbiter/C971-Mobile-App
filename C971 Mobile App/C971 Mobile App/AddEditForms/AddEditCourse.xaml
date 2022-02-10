@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="C971_Mobile_App.AddEditForms.AddEditCourse">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="ADD EDIT" x:Name="lbl_add_edit" HorizontalOptions="Center" FontSize="24"/>
+            <Entry Placeholder="Course Name" x:Name="entry_course_name"/>
+            <Label Text="Status: "/>
+            <Picker x:Name="picker_status"/>
+            <DatePicker x:Name="datepicker_start"/>
+            <DatePicker x:Name="datepicker_end"/>
+            <Entry Placeholder="Instructor" x:Name="entry_instructor_name"/>
+            <Entry Placeholder="Instructor Phone" x:Name="entry_instructor_phone"/>
+            <Entry Placeholder="Instructor Email" x:Name="entry_instructor_email"/>
+            <Label Text="Notifications"/>
+            <Switch IsToggled="false" x:Name="switch_notification"/>
+            <Entry Placeholder="Notes" x:Name="entry_notes"/>
+            <Button Text="Add New Course / Save" x:Name="btn_add_save" Clicked="btn_add_save_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

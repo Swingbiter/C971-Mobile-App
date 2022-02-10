@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="C971_Mobile_App.AddEditForms.AddEditAssessment">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="ADD/EDIT ASSESSMENT" x:Name="lbl_add_edit" HorizontalOptions="Center"/>
+            <Entry Placeholder="Assessment Name" x:Name="entry_name"/>
+            <Entry Placeholder="Assessment Type" x:Name="entry_type"/>
+            <DatePicker x:Name="datepicker_start"/>
+            <DatePicker x:Name="datepicker_end"/>
+            <Label Text="Notifications"/>
+            <Switch IsToggled="false" x:Name="switch_notification"/>
+            <Button Text="ADD/SAVE" x:Name="btn_add_save" Clicked="btn_add_save_Clicked"/>
+            <Button Text="Delete Assessment" x:Name="btn_del_assess" Clicked="btn_del_assess_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

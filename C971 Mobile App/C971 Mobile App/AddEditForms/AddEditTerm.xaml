@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="C971_Mobile_App.AddEditForms.AddEditTerm">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="ADD/EDIT" x:Name="lbl_add_edit" HorizontalOptions="Center" FontSize="24"/>
+            <Entry Placeholder="Term Title" x:Name="entry_title"/>
+            <DatePicker x:Name="datepicker_start"/>
+            <DatePicker x:Name="datepicker_end"/>
+            <Button Text="Add New Term / Save" x:Name="btn_add_save" Clicked="btn_add_save_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
