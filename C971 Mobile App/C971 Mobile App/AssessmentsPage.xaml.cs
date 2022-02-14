@@ -26,8 +26,14 @@ namespace C971_Mobile_App
             {
                 var assessments = conn.Query<Assessment>($"SELECT * FROM Assessment WHERE Course = {_course.Id}").ToList();
                 listView_Assessments.ItemsSource = assessments;
+                if (assessments.Count >= 2) 
+                {
+                    btn_add_assess.IsVisible = false;
+                }
             }
             lbl_CourseName.Text = _course.CourseName;
+
+
             base.OnAppearing();
         }
 

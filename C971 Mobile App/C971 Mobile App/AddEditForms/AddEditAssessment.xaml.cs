@@ -63,7 +63,7 @@ namespace C971_Mobile_App.AddEditForms
 
                     conn.Update(_assessment);
 
-                    Navigation.PopAsync();
+                    Navigation.PopToRootAsync();
                 }
                 else
                 {
@@ -77,7 +77,7 @@ namespace C971_Mobile_App.AddEditForms
 
                     conn.Insert(new_assessment);
 
-                    Navigation.PopAsync();
+                    Navigation.PopToRootAsync();
                 }
             }
         }
@@ -89,7 +89,7 @@ namespace C971_Mobile_App.AddEditForms
                 using (SQLiteConnection conn = new SQLiteConnection(App.FilePath))
                 {
                     conn.Delete(_assessment);
-                    Navigation.PopAsync();
+                    Navigation.PopToRootAsync();
                 }
             }
             else

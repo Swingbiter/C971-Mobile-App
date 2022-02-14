@@ -12,11 +12,13 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                        <StackLayout Orientation="Vertical" HorizontalOptions="">
                             <Label Text="{Binding Title}" VerticalOptions="Center" TextColor="Black"/>
-                            <Label Text="{Binding StartDate, StringFormat='{}{0:MM/dd/yyyy}'}" VerticalOptions="Center"/>
-                            <Label Text="-" VerticalOptions="Center" HorizontalOptions="Center"/>
-                            <Label Text="{Binding EndDate, StringFormat='{}{0:MM/dd/yyyy}'}" VerticalOptions="Center"/>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding StartDate, StringFormat='{}{0:MM/dd/yy}'}" VerticalOptions="Center"/>
+                                <Label Text="-" VerticalOptions="Center" HorizontalOptions="Center"/>
+                                <Label Text="{Binding EndDate, StringFormat='{}{0:MM/dd/yy}'}" VerticalOptions="Center"/>
+                            </StackLayout>
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>
